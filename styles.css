@@ -1,9 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     font-family: "B612";
     background-color: black;
+    height: 100vh;
+    margin: 0rem;
+    overflow: hidden;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 
-h1 {
-    color: red;    
+#blob {
+    background-color: white;
+    height: 30vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(
+    to right,
+    aquamarine,
+    mediumpurple 
+    );
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    display: flex;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1, 1.5);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    
+}
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(20vmax);
 }
