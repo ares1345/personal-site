@@ -1,3 +1,9 @@
+body {
+    font-family: "B612";
+    background-color: black;
+}
+
+
 h1 {
-    color: blue;
+    color: red;    
 }
