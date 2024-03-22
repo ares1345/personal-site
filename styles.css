@@ -95,14 +95,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    
     text-align: center;
     padding: 20px 0;
     z-index: 5;
 }
 
 footer img {
-    width: 40px;
-    height: 40px;
+    width: 4vh;
+    height: 4vh;
     z-index: 5;
 }
