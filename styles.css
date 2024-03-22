@@ -97,19 +97,44 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    z-index: 5;
+    z-index: 4;
 }
 
 footer img {
     width: 4vh;
     height: 4vh;
-    z-index: 5;
+    z-index: 4;
 }
 
-.container, #menu {
+#hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    margin: 20px;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 3.25vh;
+}
+
+
+#hamburger-menu {
+    display: block;
+}
+
+#menu {
     display: none;
 }
 
-.container.active, #menu.active {
+#menu.active {
     display: block;
+}
+
+.container.inactive {
+    display: none;
 }
