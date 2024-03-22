@@ -95,12 +95,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    
     text-align: center;
     padding: 20px 0;
-    z-index: 4;
+    z-index: 5;
 }
 
 footer img {
     width: 40px;
     height: 40px;
+    z-index: 5;
 }
