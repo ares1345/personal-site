@@ -35,15 +35,15 @@ body {
     justify-content: center;
     text-align: center;
     align-self: center;
-    height: 25vh;
+    height: 20vh;
 }
 
 .title {
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 .text {
-    font-size: 2.5vh;
+    font-size: 1.78vh;
     word-wrap: break-word;
 }
 
@@ -104,4 +104,12 @@ footer img {
     width: 4vh;
     height: 4vh;
     z-index: 5;
+}
+
+.container, #menu {
+    display: none;
+}
+
+.container.active, #menu.active {
+    display: block;
 }
