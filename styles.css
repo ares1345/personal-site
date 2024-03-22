@@ -15,6 +15,8 @@ body {
     align-items: center;
     align-self: center;
     align-content: center;
+    height: 100vh;
+    z-index: 1;
 }
 
 .glass {
@@ -24,7 +26,13 @@ body {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    z-index: 2;
+    z-index: 3;
+    width: fit-content;
+    padding: 20px;
+    font-size: 4vmax;
+    color: white;
+    align-self: center;
+    justify-content: center;
 }
 
 
@@ -69,5 +77,5 @@ body {
     width: 100%;
     position: absolute;
     z-index: 2;
-    backdrop-filter: blur(20vmax);
+    backdrop-filter: blur(50vmax);
 }
