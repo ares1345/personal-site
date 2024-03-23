@@ -170,11 +170,11 @@ footer img {
 #menu[data-active-index="2"] > #menu-background-pattern {
     background-position: 0% -75%;
   }
-  
+/*
 #menu[data-active-index="3"] > #menu-background-pattern {
     background-position: 0% -100%;
   }
-  
+*/
   
 #menu-background-pattern {
     background-image: radial-gradient(
@@ -214,15 +214,13 @@ footer img {
     opacity: 1; 
   }
 
-.menu-title:hover ~ .menu-item {
-    opacity: 0.5;
-}
+
   
 .menu-item {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Playfair display', serif, serif;
+    font-family: 'Playfair display', serif;
     font-size: clamp(3rem, 8vw, 8rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
