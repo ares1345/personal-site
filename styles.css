@@ -123,11 +123,36 @@ footer img {
     font-size: 3.25vh;
     border-radius: 10px;
     padding: 0.75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+
+#language {
+  
+  z-index: 4;
+  margin: 20px;
+  margin-right: 12rem;
+  color: black;
+  background-color: white;
+  background-repeat: no-repeat;
+  border: gray;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 3.25vh;
+  border-radius: 10px;
+  padding: 0.75vh;
+
+}
 
 #hamburger-menu {
     display: block;

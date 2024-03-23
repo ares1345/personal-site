@@ -1,4 +1,6 @@
 const button = document.getElementById('hamburger-menu');
+const title = document.querySelector('.title');
+const text = document.querySelector('.text');
 
 button.classList.toggle('active');
 
@@ -23,3 +25,11 @@ Array.from(document.getElementsByClassName("menu-item"))
       menu.dataset.activeIndex = index;
     }
   });
+
+  document.getElementById('language').addEventListener('change', function() {
+    var language = this.value;
+    // Handle the language change
+  });
+if (document.getElementById('language').value === 'French') {
+    
+}
