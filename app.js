@@ -1,6 +1,6 @@
 const button = document.getElementById('hamburger-menu');
-const title = document.querySelector('.title');
-const text = document.querySelector('.text');
+const title = document.getElementsByClassName('.title');
+const text = document.getElementsByClassName('.text');
 
 button.classList.toggle('active');
 
@@ -31,5 +31,5 @@ Array.from(document.getElementsByClassName("menu-item"))
     // Handle the language change
   });
 if (document.getElementById('language').value === 'French') {
-    
+    title.innerText = 'Bonjour!';
 }
