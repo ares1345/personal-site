@@ -28,7 +28,7 @@ Array.from(document.getElementsByClassName("menu-item"))
 
   
 document.getElementById('language').addEventListener('change', function() {
-  if (this.value === 'French') {
+  if (this.value === 'fr') {
       document.getElementById('title').innerText = 'Bonjour!';
     }
 });
