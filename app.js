@@ -27,8 +27,10 @@ Array.from(document.getElementsByClassName("menu-item"))
   });
 
   
-document.getElementById('language').addEventListener('change', function() {
-  if (this.value === 'fr') {
-      document.getElementById('title').innerText = 'Bonjour!';
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('language').addEventListener('change', function() {
+    if (document.getElementById('language').value == 'fr') {
+        document.getElementsByClassName('title').textContent = 'Bonjour!';
     }
-});
+  })
+})
