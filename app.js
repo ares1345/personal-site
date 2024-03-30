@@ -26,10 +26,9 @@ Array.from(document.getElementsByClassName("menu-item"))
     }
   });
 
-  document.getElementById('language').addEventListener('change', function() {
-    var language = this.value;
-    // Handle the language change
-  });
-if (document.getElementById('language').value === 'French') {
-    title.innerText = 'Bonjour!';
-}
+  
+document.getElementById('language').addEventListener('change', function() {
+  if (this.value === 'French') {
+      document.getElementById('title').innerText = 'Bonjour!';
+    }
+});
