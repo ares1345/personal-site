@@ -41,7 +41,7 @@ document.getElementById('language').addEventListener('change', () => {
       element.innerText = 'Bienvenue sur mon site';
     });
     
-  } else {
+  } else if (document.getElementById('language').value == 'en'){
     Array.from(title).forEach((element) => {
       element.innerText = 'Hello!';
     });
