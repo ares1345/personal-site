@@ -32,13 +32,12 @@ Array.from(document.getElementsByClassName("menu-item"))
 
 document.getElementById('language').addEventListener('change', () => {
   console.log(document.getElementById('language').value);
-  if (document.getElementById('language').value == 'fr') {
-    
-    Array.from(document.getElementsByClassName('title')).forEach((element) => {
+  if (document.getElementById('language').value == 'fr') { 
+    Array.from(title).forEach((element) => {
       element.innerHTML = 'Bonjour!';
     });
   } else {
-    Array.from(document.getElementsByClassName('title')).forEach((element) => {
+    Array.from(title).forEach((element) => {
       element.innerHTML = 'Hello!';
     });
   }
