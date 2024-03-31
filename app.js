@@ -5,17 +5,20 @@ const language = document.getElementById('language');
 
 
 
+
 button.classList.toggle('active');
 
 document.getElementById('hamburger-menu').addEventListener('click', function() {
     document.querySelector('.container').classList.toggle('inactive');
     document.getElementById('menu').classList.toggle('active');
+    
     if (button.classList.contains('active')) {
         button.innerText = 'Close';
-        button.classList.remove('active');
+        button.classList.toggle('active');
+        
     } else {
         button.innerText = 'Projets ☰';
-        button.classList.add('active');
+        button.classList.toggle('active');
 }});
 
 
@@ -32,8 +35,8 @@ Array.from(document.getElementsByClassName("menu-item"))
   
 
 document.getElementById('language').addEventListener('change', () => {
-  console.log(document.getElementById('language').value);
-  if (document.getElementById('language').value == 'fr') { 
+  console.log(language.value);
+  if (language.value == 'fr') { 
     Array.from(title).forEach((element) => {
       element.innerText = 'Bonjour!';
     });
@@ -41,7 +44,7 @@ document.getElementById('language').addEventListener('change', () => {
       element.innerText = 'Bienvenue sur mon site';
     });
     
-  } else if (document.getElementById('language').value == 'en'){
+  } else if (language.value == 'en'){
     Array.from(title).forEach((element) => {
       element.innerText = 'Hello!';
     });
