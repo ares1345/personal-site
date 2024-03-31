@@ -28,7 +28,7 @@ body {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     z-index: 3;
-    width: 65vh;
+    width: fit-content;
     padding: 20px;
     font-size: 4vmax;
     color: white;
@@ -36,7 +36,7 @@ body {
     justify-content: center;
     text-align: center;
     align-self: center;
-    height: 24vh;
+    height: fit-content;
 }
 
 .title {
@@ -186,53 +186,28 @@ footer img {
     position: relative;
     z-index: 2;
   }
-  
-#menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
-  }
-  
-#menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
-  }
-  
-#menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
-  }
-/*
-#menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -100%;
-  }
-*/
+
   
 #menu-background-pattern {
     background-image: radial-gradient(
       rgba(255, 255, 255, 0.1) 9%, 
       transparent 9%
     );
-    background-position: 0% 0%;
+    
     background-size: 12vmin 12vmin;
     height: 100vh;
     left: 0px;
     position: absolute;
     top: 0px;
-    transition: opacity 800ms ease, 
-      background-size 800ms ease,
-      background-position 800ms ease;
-    width: 100vw;
+    width: 100dvw;
     z-index: 1;
   }
   
   
   
-#menu-items:hover ~ #menu-background-pattern {
-    background-size: 11vmin 11vmin;
-    opacity: 0.5;
-  }
+
   
-#menu-items:hover ~ #menu-background-image {
-    background-size: 100vmax;
-    opacity: 0.1;
-  }
+
   
 #menu-items:hover > .menu-item {
     opacity: 0.3;
