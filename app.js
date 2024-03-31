@@ -1,6 +1,8 @@
 const button = document.getElementById('hamburger-menu');
-const title = document.getElementsByClassName('.title');
-const text = document.getElementsByClassName('.text');
+const title = document.getElementsByClassName('title');
+const text = document.getElementsByClassName('text');
+const language = document.getElementById('language');
+
 
 button.classList.toggle('active');
 
@@ -27,10 +29,17 @@ Array.from(document.getElementsByClassName("menu-item"))
   });
 
   
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('language').addEventListener('change', function() {
-    if (document.getElementById('language').value == 'fr') {
-        document.getElementsByClassName('title').textContent = 'Bonjour!';
-    }
-  })
-})
+
+document.getElementById('language').addEventListener('change', () => {
+  console.log(document.getElementById('language').value);
+  if (document.getElementById('language').value == 'fr') {
+    
+    Array.from(document.getElementsByClassName('title')).forEach((element) => {
+      element.innerHTML = 'Bonjour!';
+    });
+  } else {
+    Array.from(document.getElementsByClassName('title')).forEach((element) => {
+      element.innerHTML = 'Hello!';
+    });
+  }
+});
