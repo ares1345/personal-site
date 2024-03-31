@@ -37,9 +37,9 @@ document.getElementById('language').addEventListener('change', () => {
     Array.from(title).forEach((element) => {
       element.innerText = 'Bonjour!';
     });
-    for (let i = 0; i = options_fr.length; i++) {
-      document.getElementsByClassName('menu-item')[i].innerText = options[i];
-    };
+    Array.from(text).forEach((element) => {
+      element.innerText = 'Bienvenue sur mon site';
+    });
     
   } else {
     Array.from(title).forEach((element) => {
