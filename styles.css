@@ -17,7 +17,6 @@ body {
     align-self: center;
     align-content: center;
     height: 100dvh;
-    z-index: 1;
     overflow: hidden;
 }
 
@@ -51,17 +50,13 @@ body {
 }
 
 #blob {
-    background-color: white;
+    
     height: 40vmax;
     aspect-ratio: 1;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(
-    to right,
-    aquamarine,
-    mediumpurple,
-    peachpuff 
-    );
+    background: rgba(81, 66, 210, 1.0);
+    background: linear-gradient(315deg, rgba(81, 66, 210, 1.0), rgba(195, 39, 161, 1.0));
     animation: rotate 20s infinite;
     opacity: 0.4;
     
@@ -92,7 +87,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 2;
-    backdrop-filter: blur(50vmax);
+    backdrop-filter: blur(30vmax);
 }
 
 footer {
